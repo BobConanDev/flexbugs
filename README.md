@@ -555,7 +555,7 @@ When using `flex-flow: column wrap`, some browsers do not properly size the cont
 
 #### Workaround
 
-If your container has a fixed height (usually the case when you enable wrapping), you avoid this bug by using `flex-flow: row wrap` (note `row` instead of `column`) and fake the column behavior by updating the container's [writing mode](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode) (and reseting it on the items). Demo [14.1.b](https://philipwalton.github.io/flexbugs/14.1.b-workaround.html) shows an example of this working in all modern browsers.
+If your container has a fixed height (usually the case when you enable wrapping), you avoid this bug by using `flex-flow: row wrap` (note `row` instead of `column`) and fake the column behavior by updating the container's [writing mode](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode) (and resetting it on the items). Demo [14.1.b](https://philipwalton.github.io/flexbugs/14.1.b-workaround.html) shows an example of this working in all modern browsers.
 
 **Note:** To use this workaround in Safari 10 you may need to set explicit dimensions on the flex items. Demo [14.1.c](https://philipwalton.github.io/flexbugs/14.1.c-workaround.html) shows an example of how this can be needed in Safari 10.
 
